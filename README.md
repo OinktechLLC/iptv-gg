@@ -1,25 +1,29 @@
-# IPTV Scraper & Aggregator
+# IPTV Hunter - Поисковый робот для плейлистов
 
-Russian IPTV playlist aggregator with automatic channel discovery.
+Автоматический обновляемый IPTV плейлист с российскими каналами.
 
-## Features
+## Особенности
+- Python scraper ищет новые рабочие ссылки
+- GitHub Actions обновляет плейлист **каждые 6 часов**
+- Полностью открытый код (MIT License)
 
-- Aggregates channels from multiple sources
-- Python-based scraper for new channels
-- GitHub Actions for automated updates every 6 hours
-- M3U playlists with various qualities
-- Clean, production-ready setup
+## Как использовать
+1. Скачай `iptv/all_in_one.m3u`
+2. Добавь в свой IPTV плеер (VLC, Kodi, Perfect Player и т.д.)
 
-## Usage
+## Для разработчиков
+```bash
+git clone https://github.com/yourname/iptv-scraper.git
+cd iptv-scraper
+python -m venv venv
+source venv/bin/activate
+pip install requests
+python scraper/main.py
+```
 
-1. Clone the repo
-2. Run `python scraper/main.py` to update playlists
-3. Use the generated `iptv/all_in_one.m3u`
+## Лицензия
+MIT License - см. [LICENSE](LICENSE)
 
-## License
+---
 
-MIT License - see LICENSE file.
-
-## Contributing
-
-Pull requests welcome!
+**Проект создан с ❤️ для сообщества**
